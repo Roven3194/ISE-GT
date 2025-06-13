@@ -167,7 +167,7 @@ class ISE(pl.LightningModule):
 
     @staticmethod
     def add_model_specific_args(parent_parser):
-        parser = parent_parser.add_argument_group('HiVT')
+        parser = parent_parser.add_argument_group('ISE-GT')
         parser.add_argument('--historical_steps', type=int, default=20)
         parser.add_argument('--future_steps', type=int, default=30)
         parser.add_argument('--num_modes', type=int, default=6)
